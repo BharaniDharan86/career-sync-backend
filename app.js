@@ -14,7 +14,7 @@ const globalErrHandler = require("./controllers/errorController");
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://career-sync-app.onrender.com/"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
